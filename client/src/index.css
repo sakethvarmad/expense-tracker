@@ -1,0 +1,34 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f3f4f6; color: #111827; }
+.container { max-width: 960px; margin: 0 auto; padding: 16px; }
+header { text-align: center; margin-bottom: 16px; }
+header h1 { margin: 0; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.card { background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.card h2 { margin-top: 0; }
+.form { display: flex; flex-direction: column; gap: 10px; }
+input, select { padding: 10px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem; width: 100%; }
+.btn { padding: 8px 14px; border: 1px solid #d1d5db; background: #fff; border-radius: 8px; cursor: pointer; }
+.btn.primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+.btn.danger { color: #dc2626; border-color: #fecaca; }
+.btn-row { display: flex; gap: 8px; }
+.list { list-style: none; padding: 0; margin: 0; }
+.item { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid #e5e7eb; }
+.item-main { display: flex; flex-direction: column; gap: 4px; }
+.item-side { display: flex; align-items: center; gap: 8px; }
+.amount { font-weight: 700; margin-right: 8px; }
+.tag { background: #dbeafe; color: #1d4ed8; padding: 2px 8px; border-radius: 999px; font-size: .75rem; width: fit-content; }
+.muted { color: #6b7280; }
+.list-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.list-header select { width: auto; }
+.total { font-size: 2rem; font-weight: 800; margin: 0; }
+.bar-row { display: grid; grid-template-columns: 80px 1fr 60px; gap: 8px; align-items: center; margin-top: 8px; font-size: .9rem; }
+.bar { background: #e5e7eb; height: 8px; border-radius: 4px; overflow: hidden; }
+.bar div { background: #2563eb; height: 100%; }
+.error { background: #fee2e2; color: #991b1b; padding: 10px; border-radius: 8px; margin-bottom: 16px; }
+
+@media (max-width: 700px) {
+  .layout { grid-template-columns: 1fr; }
+  .item { flex-direction: column; align-items: flex-start; }
+  .item-side { width: 100%; justify-content: space-between; }
+}
