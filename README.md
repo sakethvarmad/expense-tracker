@@ -2,8 +2,8 @@
 
 A full-stack web app to record, edit, filter and summarise personal expenses.
 
-**Live app:** <paste Vercel frontend URL>
-**API:** <paste Vercel backend URL>
+**Live app:** https://expense-tracker-app-pi-hazel.vercel.app
+**API:** https://expense-tracker-api-sigma.vercel.app
 
 ## Problem statement
 People lose track of daily spending. This app lets a user log expenses by category,
@@ -66,4 +66,4 @@ Deploy two projects from the same repo:
 In MongoDB Atlas → Network Access, allow `0.0.0.0/0` so Vercel can connect.
 
 ## Author
-<Your name, roll number>
+D. Saketh Varma (2024015963)
